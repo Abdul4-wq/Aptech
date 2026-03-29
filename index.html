@@ -146,7 +146,7 @@
 
 <div class="Third">
   <img src="dicount1.jpg" alt="aptech" class="left">
-  <img src="discount2.jpeg" alt="aptech" class="middle">
+  <img src="discount2.jpg" alt="aptech" class="middle">
   <img src="discount3.jpg" alt="aptech" class="right">
 </div>
 
@@ -193,14 +193,14 @@
 <div class="img-hold">
   <div class="all-box">
     <div class="first">
-      <img src="1TECH.webp" alt="tech">
+      <img src="1TECH.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
     <div class="all-box">
     <div class="first">
-      <img src="2Tech.webp" alt="tech">
+      <img src="2Tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
@@ -208,49 +208,49 @@
 
     <div class="all-box">
     <div class="first">
-      <img src="3tech.webp" alt="tech">
+      <img src="3tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
   <div class="all-box">
     <div class="first">
-      <img src="4tech.webp" alt="tech">
+      <img src="4tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
   <div class="all-box">
     <div class="first">
-      <img src="5tech.webp" alt="tech">
+      <img src="5tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
   <div class="all-box">
     <div class="first">
-      <img src="7tech.webp" alt="tech">
+      <img src="7tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
   <div class="all-box">
     <div class="first">
-      <img src="8tech.webp" alt="tech">
+      <img src="8tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
   <div class="all-box">
     <div class="first">
-      <img src="9tech.webp" alt="tech">
+      <img src="9tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
 
   <div class="all-box">
     <div class="first">
-      <img src="10tech.webp" alt="tech">
+      <img src="10tech.jpg" alt="tech">
       <h2>Advance deploma <br>in Software Engineering</h2>
     </div>
   </div>
@@ -279,8 +279,8 @@
 
 <main class="all">
   <div class="imageee">
-    <img class="one" src="/teammate.jpg" alt="people">
-    <img  class="two" src="/persontech.jpg" alt="people">
+    <img class="one" src="teammate.jpg" alt="people">
+    <img  class="two" src="persontech.jpg" alt="people">
   </div>
 
   <div class="igm">
@@ -390,7 +390,7 @@
 
   <div class="footer-grid">
 
-    <!-- LEFT COLUMN -->
+    
     <div class="footer-about">
       <img src="logo.png" class="logo">
 
@@ -410,7 +410,7 @@
       </div>
     </div>
 
-    <!-- QUICK LINKS -->
+    
     <div class="footer-links">
       <h3>Quick Links</h3>
       <ul>
@@ -427,7 +427,7 @@
       </ul>
     </div>
 
-    <!-- CENTERS COLUMN 1 -->
+    
     <div class="footer-centers">
       <h3>Centers</h3>
 
@@ -441,7 +441,7 @@
       <p>+234 701 119 1866<br>+234 812 538 7810</p>
     </div>
 
-    <!-- CENTERS COLUMN 2 -->
+
     <div class="footer-centers">
       <h3>&nbsp;</h3>
 
@@ -473,19 +473,19 @@ let current = 0;
 
 function showNextSlide() {
   slides[current].classList.remove('active');
-  slides[current].classList.add('leave-left'); // slide out to left
+  slides[current].classList.add('leave-left'); 
 
   current = (current + 1) % slides.length;
 
-  slides[current].classList.add('active'); // new slide comes in from right
+  slides[current].classList.add('active'); 
 
-  // remove leave-left after transition duration (match your CSS)
+  
   setTimeout(() => {
     slides.forEach(slide => slide.classList.remove('leave-left'));
-  }, 1000); // 1s = transition duration
+  }, 1000); 
 }
 
-// change slide every 5 seconds
+
 setInterval(showNextSlide, 5000);
 
 </script>
